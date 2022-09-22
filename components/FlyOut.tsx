@@ -11,7 +11,7 @@ function Flyout(props) {
 
   return (
     <FlyoutContext.Provider value={{ open, toggle, value, setValue }}>
-      {props.children}
+      <div className="flyout">{props.children}</div>
     </FlyoutContext.Provider>
   );
 }
