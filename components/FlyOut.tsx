@@ -32,6 +32,7 @@ function Input(props) {
 }
 
 function List(props) {
+  const { open } = useFlyoutContext();
   return (
     open && (
       <div className="flyout-list">
